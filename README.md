@@ -247,22 +247,22 @@ npm install
 ## Application Screenshots
 
 ### 1. Dashboard Overview
-![Dashboard Overview Placeholder](/Screenshots/dashboard.png)
+![Dashboard Overview Placeholder](Screenshots/dashboard.png)
 
 ### 2. Activity Management
-![Activity Management Placeholder](/Screenshots/activites.png)
+![Activity Management Placeholder](Screenshots/activites.png)
 
 ### 3. Real-Time Active Timer
-![Active Timer Placeholder](/Screenshots/timer.png)
+![Active Timer Placeholder](Screenshots/timer.png)
 
 ### 4. Category-Wise Analytics (Recharts)
-![Category Chart Placeholder](/Screenshots/chart.png)
+![Category Chart Placeholder](Screenshots/chart.png)
 
 ### 5. Daily Total Tracking
-![Daily Chart Placeholder](/Screenshots/daily%20activities.png)
+![Daily Chart Placeholder](Screenshots/daily%20activities.png)
 
 ### 6. Time Session History
-![Session History Placeholder](/Screenshots/history.png)
+![Session History Placeholder](Screenshots/history.png)
 
 ---
 
