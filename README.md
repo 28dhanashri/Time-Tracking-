@@ -246,25 +246,23 @@ npm install
 
 ## Application Screenshots
 
-*(Placeholder sections for college project presentation screenshots)*
-
 ### 1. Dashboard Overview
-![Dashboard Overview Placeholder](https://via.placeholder.com/800x450?text=Dashboard+Overview+Screenshot)
+![Dashboard Overview Placeholder](/Screenshots/dashboard.png)
 
 ### 2. Activity Management
-![Activity Management Placeholder](https://via.placeholder.com/800x450?text=Activities+Management+Screenshot)
+![Activity Management Placeholder](/Screenshots/activites.png)
 
 ### 3. Real-Time Active Timer
-![Active Timer Placeholder](https://via.placeholder.com/800x450?text=Active+Timer+Screenshot)
+![Active Timer Placeholder](/Screenshots/timer.png)
 
 ### 4. Category-Wise Analytics (Recharts)
-![Category Chart Placeholder](https://via.placeholder.com/800x450?text=Category+Analytics+Screenshot)
+![Category Chart Placeholder](/Screenshots/chart.png)
 
 ### 5. Daily Total Tracking
-![Daily Chart Placeholder](https://via.placeholder.com/800x450?text=Daily+Total+Chart+Screenshot)
+![Daily Chart Placeholder](/Screenshots/daily%20activities.png)
 
 ### 6. Time Session History
-![Session History Placeholder](https://via.placeholder.com/800x450?text=Time+Session+History+Screenshot)
+![Session History Placeholder](/Screenshots/history.png)
 
 ---
 
