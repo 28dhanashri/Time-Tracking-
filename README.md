@@ -250,7 +250,7 @@ npm install
 ![Dashboard Overview Placeholder](Screenshots/dashboard.png)
 
 ### 2. Activity Management
-![Activity Management Placeholder](Screenshots/activites.png)
+![Activity Management Placeholder](Screenshots/activities.png)
 
 ### 3. Real-Time Active Timer
 ![Active Timer Placeholder](Screenshots/timer.png)
