@@ -15,7 +15,6 @@
 9. [Testing Strategy & Edge Case Verification](#testing-strategy--edge-case-verification)
 10. [Application Screenshots](#application-screenshots)
 11. [Future Enhancements](#future-enhancements)
-12. [College Viva Q&A Guide](#college-viva-qa-guide)
 
 ---
 
@@ -52,85 +51,54 @@ This application fulfills all 5 mandatory core requirements specified in the pro
 ---
 
 ## Technologies Used
-
 ### Frontend
+
 - **React.js (v18)**: Component-based UI library
+
 - **Vite**: Rapid frontend build tool & development server
+
 - **JavaScript (JSX)**: Modern ECMAScript standard
+
 - **React Router (v6)**: Client-side single page app routing
-- **Recharts**: Responsive charting library for Pie and Bar charts
-- **React Icons**: Modern vector icons
-- **Vanilla CSS**: Custom CSS design system with CSS variables & micro-animations
+
+
+
 
 ### Backend
+
 - **Node.js**: Asynchronous JavaScript runtime environment
+
 - **Express.js**: REST API web framework
-- **Cors & Dotenv**: Cross-Origin Resource Sharing & Environment variable configuration
+
 
 ### Database
-- **MongoDB**: NoSQL database for document storage
-- **Mongoose**: Object Data Modeling (ODM) library
-- **MongoMemoryServer**: Automatic dev fallback if local MongoDB service is offline
 
+- **MongoDB**: NoSQL database for document storage
+
+- **Mongoose**: Object Data Modeling (ODM) library
+---
 ---
 
 ## Project Directory Structure
 
-```
 Time Tracking Tool/
-├── server/
-│   ├── config/
-│   │   └── db.js                 # MongoDB connection & memory fallback
-│   ├── controllers/
-│   │   ├── activityController.js # CRUD handlers for Activities
-│   │   ├── sessionController.js  # Timer start/stop, active session, history
-│   │   └── reportController.js   # Summary, category, and daily aggregations
-│   ├── models/
-│   │   ├── Activity.js           # Activity Mongoose schema
-│   │   └── TimeSession.js        # TimeSession Mongoose schema
-│   ├── routes/
-│   │   ├── activityRoutes.js     # /api/activities endpoints
-│   │   ├── sessionRoutes.js      # /api/sessions endpoints
-│   │   └── reportRoutes.js       # /api/reports endpoints
-│   ├── utils/
-│   │   └── timeHelpers.js        # Timestamp formatting & math helpers
-│   ├── .env                      # Server port & MongoDB connection string
-│   ├── package.json
-│   └── server.js                 # Express entry point
 │
 ├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx        # Sticky navbar with active timer status
-│   │   │   ├── Sidebar.jsx       # Side navigation bar
-│   │   │   ├── SummaryCard.jsx   # Statistic card component
-│   │   │   ├── ActivityCard.jsx  # Activity item with controls
-│   │   │   ├── Timer.jsx         # Live stopwatch widget
-│   │   │   ├── CategoryChart.jsx # Recharts Pie/Donut breakdown
-│   │   │   ├── DailyChart.jsx    # Recharts Bar chart for daily hours
-│   │   │   ├── SessionTable.jsx  # History data table
-│   │   │   └── Toast.jsx         # User feedback notifications
-│   │   ├── context/
-│   │   │   └── ThemeContext.jsx  # Light/Dark mode provider
-│   │   ├── hooks/
-│   │   │   └── useTimer.js       # Timer logic & backend sync hook
-│   │   ├── pages/
-│   │   │   ├── Dashboard.jsx     # Overview page
-│   │   │   ├── Activities.jsx    # Activity management page
-│   │   │   ├── TimerPage.jsx     # Focused timer page
-│   │   │   ├── Reports.jsx       # Detailed analytics page
-│   │   │   └── History.jsx       # Session history page
-│   │   ├── services/
-│   │   │   └── api.js            # Axios client methods
-│   │   ├── utils/
-│   │   │   └── timeUtils.js      # Time formatting utilities
-│   │   ├── App.jsx               # Main React router container
-│   │   ├── main.jsx              # React DOM render entry
-│   │   └── index.css             # SaaS CSS design system
 │   ├── package.json
-│   ├── vite.config.js
-│   └── index.html
+│   ├── src/
+│   └── ...
+│
+├── server/
+│   ├── package.json
+│   ├── server.js
+│   └── ...
+│
 └── README.md
+The project is divided into two main parts:
+
+client - React/Vite frontend
+
+server - Node.js/Express backend
 ```
 
 ---
@@ -214,15 +182,57 @@ npm install
 ## AI Tools Used & Representative Prompts
 
 ### AI Tools Utilized
-- **Antigravity AI Coding Assistant**: Architectural design, React component construction, Express controller setup, CSS variable design system, and MongoDB schema optimization.
 
-### Representative AI Prompts Used During Development
-1. *"Design an Express & Mongoose schema for Activity and TimeSession where starting a timer enforces a single active running timer restriction across the whole application."*
-2. *"Write a custom React hook `useTimer` that calculates elapsed duration using timestamp offsets `(currentTime - startTime)` so that refreshing the page doesn't reset the timer."*
-3. *"Build a responsive SaaS dashboard using CSS variables with light/dark theme toggling, Recharts Donut chart for category tracking, and Bar chart for daily tracked time."*
-4. *"Create a MongoDB aggregation query to group time sessions by date `(YYYY-MM-DD)` and calculate daily total tracked seconds and hours over the past 7 days."*
+- The following AI tools were used as learning and development assistants:
 
----
+ChatGPT
+
+AI assistance was used for:
+
+Understanding the problem statement
+
+Understanding programming concepts
+
+Project planning
+
+Writing and improving code
+
+Debugging errors
+
+Understanding npm and project setup
+
+Debugging frontend/backend communication
+
+MongoDB setup guidance
+
+Testing and troubleshooting
+
+Documentation and README preparation
+
+AI-generated or AI-suggested code was reviewed, tested, and adapted as required.
+
+ Important AI Prompts / AI Usage
+Examples of prompts used during development include:
+
+Project Development
+Create a time tracking web application with a frontend and backend, including activities, timers, sessions, and reports.
+
+Debugging
+Help me identify and fix the error in my project and explain the steps clearly.
+
+MongoDB Setup
+Guide me step-by-step through installing and configuring MongoDB on Windows for my Node.js project.
+
+Frontend/Backend Connection
+Help me troubleshoot the Vite proxy connection between my React frontend and Node.js backend.
+
+API Testing
+Help me test the REST API endpoints and understand the response returned by the server.
+
+Documentation
+Create a README.md for my Time Tracking Tool according to the assignment requirements.
+
+AI was used as an assistant. The generated suggestions were reviewed and tested during development rather than being submitted without verification
 
 ## Testing Strategy & Edge Case Verification
 
@@ -248,21 +258,26 @@ npm install
 
 ### 1. Dashboard Overview
 ![Dashboard Overview Placeholder](Screenshots/dashboard.png)
+![](2026-09-29-15-39-14.png)
 
 ### 2. Activity Management
 ![Activity Management Placeholder](Screenshots/activities.png)
+![](2026-09-29-15-41-28.png)
 
 ### 3. Real-Time Active Timer
 ![Active Timer Placeholder](Screenshots/timer.png)
+![](2026-09-29-15-41-53.png)
 
 ### 4. Category-Wise Analytics (Recharts)
 ![Category Chart Placeholder](Screenshots/chart.png)
-
+![](2026-09-29-15-43-00.png)
 ### 5. Daily Total Tracking
 ![Daily Chart Placeholder](Screenshots/daily%20activities.png)
+![](2026-09-29-15-43-17.png)
 
 ### 6. Time Session History
 ![Session History Placeholder](Screenshots/history.png)
+![](2026-09-29-15-43-39.png)
 
 ---
 
@@ -273,3 +288,5 @@ npm install
 - Project & Tag tagging for granular task tracking
 
 ---
+
+
