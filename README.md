@@ -81,6 +81,7 @@ This application fulfills all 5 mandatory core requirements specified in the pro
 
 ## Project Directory Structure
 
+```text
 Time Tracking Tool/
 │
 ├── client/
@@ -94,12 +95,12 @@ Time Tracking Tool/
 │   └── ...
 │
 └── README.md
+```
+
 The project is divided into two main parts:
 
-client - React/Vite frontend
-
-server - Node.js/Express backend
-```
+- **client** - React/Vite frontend
+- **server** - Node.js/Express backend
 
 ---
 
